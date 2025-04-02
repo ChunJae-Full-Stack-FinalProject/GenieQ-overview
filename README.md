@@ -9,6 +9,8 @@
   👉 <a href="http://43.202.6.90/team/genius/kwanghoon">소개 페이지 바로가기</a>
 </p>
 
+
+
 ## 👥 팀 구성원
 <a id="section1"></a>
 <table>
