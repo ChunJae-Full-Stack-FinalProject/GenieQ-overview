@@ -95,10 +95,356 @@
 
 ## 📂 레포지토리
 
-| 구분 | 링크 |
+| 구분 | 링크 | 
 |------|------|
-| 🖥️ Frontend | [2nd_GenieQ_FrontEnd](https://github.com/ChunJae-Full-Stack-FinalProject/2nd_GenieQ_FrontEnd) |
-| 🛠️ Backend  | [2nd_GenieQ_BackEnd](https://github.com/ChunJae-Full-Stack-FinalProject/2nd_GenieQ_BackEnd) |
+| 🖥️ Frontend | [2nd_GenieQ_FrontEnd](https://github.com/ChunJae-Full-Stack-FinalProject/2nd_GenieQ_FrontEnd) 
+| 🛠️ Backend  | [2nd_GenieQ_BackEnd](https://github.com/ChunJae-Full-Stack-FinalProject/2nd_GenieQ_BackEnd) 
+<details>
+<summary>🖥️ 프론트엔드 구조 보기</summary>
+<pre><code>
+├─📁 components/
+│  ├─📁 auth/
+│  │  ├─📄 PasswordSearch.vue
+│  │  ├─📄 SingUpPage.vue
+│  │  └─📄 TempPasswordNotice.vue
+│  │
+│  ├─📁 common/
+│  │  ├─📁 button/
+│  │  │  ├─📄 BaseButton.vue
+│  │  │
+│  │  ├─📄 Footer.vue
+│  │  └─📄 Sidebar.vue
+│  │
+│  ├─📁 generation/
+│  │  ├─📁 passage/
+│  │  │  ├─📁 PassageContent/
+│  │  │  │  ├─📄 InputPassageTitle.vue
+│  │  │  │  ├─📄 PassageContentMain.vue
+│  │  │  │  └─📄 PassageSummary.vue
+│  │  │  │
+│  │  │  ├─📁 PassageMain/
+│  │  │  │  └─📄 CreatePassageMain.vue
+│  │  │  │
+│  │  │  ├─📄 PassageContent.vue
+│  │  │  └─📄 PassageMain.vue
+│  │  │
+│  │  ├─📁 question/
+│  │  │  ├─📁 GenerateQuestion/
+│  │  │  │  ├─📁 EditPassageQuestion/
+│  │  │  │  │  ├─📄 EditPassage.vue
+│  │  │  │  │  ├─📄 EditQuestion.vue
+│  │  │  │  │  ├─📄 EditTitle.vue
+│  │  │  │  │  └─📄 SymbolTooltip.vue
+│  │  │  │  │
+│  │  │  │  ├─📄 PassageTitle.vue
+│  │  │  │  └─📄 QuestionDescription.vue
+│  │  │  │
+│  │  │  ├─📁 QuestionMain/
+│  │  │  │  ├─📄 InsertPassage.vue
+│  │  │  │  ├─📄 StoresInsertPassage.vue
+│  │  │  │  └─📄 UserInsertPassage.vue
+│  │  │  │
+│  │  │  ├─📄 GenerateQuestion.vue
+│  │  │  └─📄 QuestionMain.vue
+│  │  │
+│  │  └─📄 PaymentUsage.vue
+│  │
+│  ├─📁 mainhome/
+│  │  ├─📁 MainContent/
+│  │  │  ├─📄 NoticeList.vue
+│  │  │  ├─📄 NotionLink.vue
+│  │  │  ├─📄 ToFAQ.vue
+│  │  │  ├─📄 WelcomInfo.vue
+│  │  │  └─📄 WorkList.vue
+│  │  │
+│  │  └─📄 MainHome.vue
+│  │
+│  ├─📁 mypage/
+│  │  ├─📄 Faq.vue
+│  │  ├─📄 Info.vue
+│  │  ├─📄 MyPageContent.vue
+│  │  ├─📄 MyPageWrapper.vue
+│  │  ├─📄 Notice.vue
+│  │  ├─📄 NoticeDetail.vue
+│  │  └─📄 Ticket.vue
+│  │
+│  ├─📁 portfolio/
+│  │  ├─📄 GenieQShortcut.vue
+│  │  ├─📄 PortfolioMember.vue
+│  │  └─📄 PortfolioTeam.vue
+│  │
+│  ├─📁 storage/
+│  │  ├─📁 storageContent/
+│  │  │  └─📁 MainCompo/
+│  │  │     ├─📄 LikeList1.vue
+│  │  │     └─📄 WorkList1.vue
+│  │  │
+│  │  ├─📄 LikeMain.vue
+│  │  ├─📄 StorageMain.vue
+│  │  └─📄 WorkListMain.vue
+│  │
+│  └─📁 test/
+│     ├─📄 DelayComponent.vue
+│     ├─📄 ImmediatelyComponent.vue
+│     ├─📄 TestHomeComponent.vue
+│     └─📄 TestSideNavBarComponent.vue
+│
+├─📁 router/
+│  ├─📄 auth.routes.js
+│  ├─📄 common.routes.js
+│  ├─📄 generation.routes.js
+│  ├─📄 index.js
+│  ├─📄 mypage.routes.js
+│  └─📄 storage.routes.js
+│
+├─📁 stores/
+│  ├─📄 auth.js
+│  ├─📄 globalNameStore.js
+│  └─📄 passage.js
+│
+├─📁 views/
+│  ├─📄 Frame.vue
+│  ├─📄 LoginView.vue
+│  └─📄 TeamView.vue
+│
+├─📄 App.vue
+└─📄 main.js
+</code></pre>
+</details>
+
+<details>
+<summary>🛠️ 백엔드 구조 보기</summary>
+<pre><code>
+├─📁 main/
+│  ├─📁 java/
+│  │  ├─📁 com/
+│  │  │  └─📁 cj/
+│  │  │     └─📁 genieq/
+│  │  │        ├─📁 common/
+│  │  │        │  ├─📁 config/
+│  │  │        │  │  ├─📄 SecurityConfig.java
+│  │  │        │  │  ├─📄 SwaggerConfig.java
+│  │  │        │  │  └─📄 WebMvcConfig.java
+│  │  │        │  │
+│  │  │        │  ├─📁 interceptor/
+│  │  │        │  │  └─📄 AuthInterceptor.java
+│  │  │        │  │
+│  │  │        │  └─📁 token/
+│  │  │        │
+│  │  │        ├─📁 format/
+│  │  │        │  ├─📁 controller/
+│  │  │        │  │  └─📄 FormatController.java
+│  │  │        │  │
+│  │  │        │  ├─📁 dto/
+│  │  │        │  │  └─📄 Format.java
+│  │  │        │  │
+│  │  │        │  ├─📁 entity/
+│  │  │        │  │  └─📄 FormatEntity.java
+│  │  │        │  │
+│  │  │        │  ├─📁 repository/
+│  │  │        │  │  └─📄 FormatRepository.java
+│  │  │        │  │
+│  │  │        │  └─📁 service/
+│  │  │        │     ├─📄 FormatService.java
+│  │  │        │     └─📄 FormatServiceImpl.java
+│  │  │        │
+│  │  │        ├─📁 member/
+│  │  │        │  ├─📁 controller/
+│  │  │        │  │  └─📄 MemberController.java
+│  │  │        │  │
+│  │  │        │  ├─📁 dto/
+│  │  │        │  │  ├─📁 request/
+│  │  │        │  │  │  ├─📄 FindPasswordRequestDto.java
+│  │  │        │  │  │  ├─📄 LoginRequestDto.java
+│  │  │        │  │  │  ├─📄 SignUpRequestDto.java
+│  │  │        │  │  │  ├─📄 UpdateNameRequestDto.java
+│  │  │        │  │  │  ├─📄 UpdatePasswordRequestDto.java
+│  │  │        │  │  │  ├─📄 UpdateTypeRequestDto.java
+│  │  │        │  │  │  └─📄 WithdrawRequestDto.java
+│  │  │        │  │  │
+│  │  │        │  │  ├─📁 response/
+│  │  │        │  │  │  ├─📄 LoginMemberResponseDto.java
+│  │  │        │  │  │  └─📄 MemberInfoResponseDto.java
+│  │  │        │  │  │
+│  │  │        │  │  └─📄 Member.java
+│  │  │        │  │
+│  │  │        │  ├─📁 entity/
+│  │  │        │  │  └─📄 MemberEntity.java
+│  │  │        │  │
+│  │  │        │  ├─📁 repository/
+│  │  │        │  │  └─📄 MemberRepository.java
+│  │  │        │  │
+│  │  │        │  └─📁 service/
+│  │  │        │     ├─📄 AuthService.java
+│  │  │        │     ├─📄 AuthServiceImpl.java
+│  │  │        │     ├─📄 InfoService.java
+│  │  │        │     └─📄 InfoServiceImpl.java
+│  │  │        │
+│  │  │        ├─📁 notice/
+│  │  │        │  ├─📁 controller/
+│  │  │        │  │  └─📄 NoticeController.java
+│  │  │        │  │
+│  │  │        │  ├─📁 dto/
+│  │  │        │  │  ├─📁 response/
+│  │  │        │  │  │  ├─📄 NoticeListResponseDto.java
+│  │  │        │  │  │  └─📄 NoticeResponseDto.java
+│  │  │        │  │  │
+│  │  │        │  │  └─📄 Notice.java
+│  │  │        │  │
+│  │  │        │  ├─📁 entity/
+│  │  │        │  │  └─📄 NoticeEntity.java
+│  │  │        │  │
+│  │  │        │  ├─📁 repository/
+│  │  │        │  │  └─📄 NoticeRepository.java
+│  │  │        │  │
+│  │  │        │  └─📁 service/
+│  │  │        │     ├─📄 NoticeService.java
+│  │  │        │     └─📄 NoticeServiceImpl.java
+│  │  │        │
+│  │  │        ├─📁 passage/
+│  │  │        │  ├─📁 controller/
+│  │  │        │  │  └─📄 PassageController.java
+│  │  │        │  │
+│  │  │        │  ├─📁 dto/
+│  │  │        │  │  ├─📁 request/
+│  │  │        │  │  │  ├─📄 PassageDeleteRequestDto.java
+│  │  │        │  │  │  ├─📄 PassageFavoriteRequestDto.java
+│  │  │        │  │  │  ├─📄 PassageInsertRequestDto.java
+│  │  │        │  │  │  ├─📄 PassageUpdateRequestDto.java
+│  │  │        │  │  │  ├─📄 PassageUpdateTitleRequestDto.java
+│  │  │        │  │  │  └─📄 PassageWithQuestionsRequestDto.java
+│  │  │        │  │  │
+│  │  │        │  │  ├─📁 response/
+│  │  │        │  │  │  ├─📄 PassageFavoriteResponseDto.java
+│  │  │        │  │  │  ├─📄 PassagePreviewListDto.java
+│  │  │        │  │  │  ├─📄 PassageSelectResponseDto.java
+│  │  │        │  │  │  ├─📄 PassageStorageEachResponseDto.java
+│  │  │        │  │  │  ├─📄 PassageStorageMainResponseDto.java
+│  │  │        │  │  │  └─📄 PassageWithQuestionsResponseDto.java
+│  │  │        │  │  │
+│  │  │        │  │  └─📄 Passage.java
+│  │  │        │  │
+│  │  │        │  ├─📁 entity/
+│  │  │        │  │  └─📄 PassageEntity.java
+│  │  │        │  │
+│  │  │        │  ├─📁 repository/
+│  │  │        │  │  └─📄 PassageRepository.java
+│  │  │        │  │
+│  │  │        │  └─📁 service/
+│  │  │        │     ├─📄 PassageService.java
+│  │  │        │     ├─📄 PassageServiceImpl.java
+│  │  │        │     ├─📄 PdfService.java
+│  │  │        │     ├─📄 TxtService.java
+│  │  │        │     └─📄 WordService.java
+│  │  │        │
+│  │  │        ├─📁 payment/
+│  │  │        │  ├─📁 controller/
+│  │  │        │  │  └─📄 PaymentController.java
+│  │  │        │  │
+│  │  │        │  ├─📁 dto/
+│  │  │        │  │  ├─📁 request/
+│  │  │        │  │  │  └─📄 PaymentRequestDto.java
+│  │  │        │  │  │
+│  │  │        │  │  ├─📁 response/
+│  │  │        │  │  │  └─📄 PaymentListResponseDto.java
+│  │  │        │  │  │
+│  │  │        │  │  └─📄 Payment.java
+│  │  │        │  │
+│  │  │        │  ├─📁 entity/
+│  │  │        │  │  └─📄 PaymentEntity.java
+│  │  │        │  │
+│  │  │        │  ├─📁 repository/
+│  │  │        │  │  └─📄 PaymentRepository.java
+│  │  │        │  │
+│  │  │        │  └─📁 service/
+│  │  │        │     ├─📄 PaymentService.java
+│  │  │        │     └─📄 PaymentServiceImpl.java
+│  │  │        │
+│  │  │        ├─📁 question/
+│  │  │        │  ├─📁 controller/
+│  │  │        │  │  └─📄 QuestionController.java
+│  │  │        │  │
+│  │  │        │  ├─📁 dto/
+│  │  │        │  │  ├─📁 request/
+│  │  │        │  │  │  ├─📄 QuestionInsertRequestDto.java
+│  │  │        │  │  │  └─📄 QuestionUpdateRequestDto.java
+│  │  │        │  │  │
+│  │  │        │  │  ├─📁 response/
+│  │  │        │  │  │  └─📄 QuestionSelectResponseDto.java
+│  │  │        │  │  │
+│  │  │        │  │  ├─📄 Question.java
+│  │  │        │  │  └─📄 QuestionDto.java
+│  │  │        │  │
+│  │  │        │  ├─📁 entity/
+│  │  │        │  │  └─📄 QuestionEntity.java
+│  │  │        │  │
+│  │  │        │  ├─📁 repository/
+│  │  │        │  │  └─📄 QuestionRepository.java
+│  │  │        │  │
+│  │  │        │  └─📁 service/
+│  │  │        │     ├─📄 QuestionService.java
+│  │  │        │     └─📄 QuestionServiceImpl.java
+│  │  │        │
+│  │  │        ├─📁 test/
+│  │  │        │  ├─📁 controller/
+│  │  │        │  │  ├─📄 TestMemberCommandLineRunner.java
+│  │  │        │  │  └─📄 TestMemberController.java
+│  │  │        │  │
+│  │  │        │  ├─📁 dto/
+│  │  │        │  │  └─📄 TestMember.java
+│  │  │        │  │
+│  │  │        │  ├─📁 entity/
+│  │  │        │  │  └─📄 TestMemberEntity.java
+│  │  │        │  │
+│  │  │        │  ├─📁 repository/
+│  │  │        │  │  └─📄 TestMemberRepository.java
+│  │  │        │  │
+│  │  │        │  └─📁 service/
+│  │  │        │     ├─📄 TestMemberService.java
+│  │  │        │     └─📄 TestMemberServiceImpl.java
+│  │  │        │
+│  │  │        ├─📁 ticket/
+│  │  │        │  ├─📁 entity/
+│  │  │        │  │  └─📄 TicketEntity.java
+│  │  │        │  │
+│  │  │        │  └─📁 repository/
+│  │  │        │     └─📄 TicketRepository.java
+│  │  │        │
+│  │  │        ├─📁 usage/
+│  │  │        │  ├─📁 controller/
+│  │  │        │  │  └─📄 UsageController.java
+│  │  │        │  │
+│  │  │        │  ├─📁 dto/
+│  │  │        │  │  └─📁 response/
+│  │  │        │  │     └─📄 UsageListResponseDto.java
+│  │  │        │  │
+│  │  │        │  ├─📁 entity/
+│  │  │        │  │  └─📄 UsageEntity.java
+│  │  │        │  │
+│  │  │        │  ├─📁 repository/
+│  │  │        │  │  └─📄 UsageRepository.java
+│  │  │        │  │
+│  │  │        │  └─📁 service/
+│  │  │        │     ├─📄 UsageService.java
+│  │  │        │     └─📄 UsageServiceImpl.java
+│  │  │        │
+│  │  │        └─📄 GenieqApplication.java
+│  │  │
+│  │
+│  ├─📁 resources/
+│  │  ├─📁 fonts/
+│  │  │
+│  │  ├─📁 initdata/
+│  │  │
+│  │  ├─📁 templates/
+│  │  │
+│  │  ├─📄 application-private.properties
+│  │  ├─📄 application-private.properties.template
+│  │  ├─📄 application.properties
+│  │  └─📄 datasource.properties
+│  │ 
+</code></pre>
+</details>
 
 ## ✨ 주요 기능
 
