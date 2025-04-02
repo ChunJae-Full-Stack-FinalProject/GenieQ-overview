@@ -19,8 +19,6 @@
         <br/>
         <sub><b>최광훈</b></sub>
       </a>
-      <br/>
-      <sub>팀장</sub>
     </td>
     <td align="center">
       <a href="https://github.com/daineee424">
