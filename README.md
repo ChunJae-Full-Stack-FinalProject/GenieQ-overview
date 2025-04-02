@@ -6,7 +6,8 @@
 </p>
 
 <p>
-  👉 <a href="http://43.202.6.90/team/genius/kwanghoon">소개 페이지 바로가기</a>
+  👉 <a href="http://43.202.6.90/team/genius/kwanghoon">소개 페이지 바로가기</a></br>
+  🌐 <a href="http://43.202.6.90">GenieQ 배포 웹사이트 바로가기</a>
 </p>
 
 ## 👥 팀 구성원
@@ -466,7 +467,8 @@ AI는 생성된 지문 또는 직접 입력한 텍스트를 바탕으로 객관�
 <img src="./images/storage.gif" width="100%" alt="자료실 시연" />
 
 
-## 🧭 화면 플로우 차트
+## 🧭 화면
+🎨 [Figma 디자인 시안](https://www.figma.com/design/5Wf8PhVSI48Rvd3nLshRiH/%5B%EA%B0%9C%EB%B0%9C%ED%98%91%EC%97%85%5D%EA%B5%AD%EC%96%B4-%EC%A7%80%EB%AC%B8%2C-%EB%AC%B8%ED%95%AD-%EC%83%9D%EC%84%B1-%EC%84%9C%EB%B9%84%EC%8A%A4?node-id=1490-14096&t=ifwDthlKzWAce4iL-0)
 
 서비스의 전체 사용자 흐름을 보여주는 플로우 차트입니다.
 
