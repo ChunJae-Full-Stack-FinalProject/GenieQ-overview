@@ -73,6 +73,7 @@
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
   <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white" />
+  <img src="https://img.shields.io/badge/JPA-59666C?style=for-the-badge&logo=hibernate&logoColor=white" />
   <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white" />
 </div>
 
@@ -98,6 +99,23 @@
 |------|------|
 | 🖥️ Frontend | [2nd_GenieQ_FrontEnd](https://github.com/ChunJae-Full-Stack-FinalProject/2nd_GenieQ_FrontEnd) |
 | 🛠️ Backend  | [2nd_GenieQ_BackEnd](https://github.com/ChunJae-Full-Stack-FinalProject/2nd_GenieQ_BackEnd) |
+
+## ✨ 주요 기능
+
+
+### 📝 지문 생성
+
+사용자는 다양한 분야(인문, 예술, 사회, 과학, 기술)와 제재를 선택해 AI가 생성한 맞춤형 지문을 받아볼 수 있습니다. 핵심 논점이 자동 추출되며, 편집 및 PDF·Word·TXT 포맷으로의 출력이 가능합니다.
+
+
+### ❓ 문항 생성
+
+AI는 생성된 지문 또는 직접 입력한 텍스트를 바탕으로 객관식 문항을 자동 생성하며, 정답과 해설도 함께 제공합니다. 문항은 수정·추가가 가능하여 학습 목적에 맞게 조정할 수 있습니다.
+
+
+### 📂 자료실
+
+생성한 지문과 문항을 체계적으로 저장·관리할 수 있으며, 최근 작업과 즐겨찾기를 통해 빠르게 접근할 수 있습니다. 최대 150개 자료까지 보관 가능하며, 다양한 포맷으로 추출해 수업에 활용할 수 있습니다.
 
 
 ## 🧭 화면 플로우 차트
