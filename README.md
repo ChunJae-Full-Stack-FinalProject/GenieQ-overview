@@ -1,7 +1,7 @@
 # GenieQ - AI 기반 지문 및 문항 생성 서비스
 
 <p>
-  <img src="./파비콘.png" width="50" style="vertical-align: middle; margin-right: 12px;" />
+  <img src="./images/파비콘.png" width="50" style="vertical-align: middle; margin-right: 12px;" />
   GenieQ는 교육자를 위한 생성형 AI 기반 국어 비문학 지문 및 문항 생성 서비스입니다.
 </p>
 
@@ -100,4 +100,18 @@
 |------|------|
 | 🖥️ Frontend | [2nd_GenieQ_FrontEnd](https://github.com/ChunJae-Full-Stack-FinalProject/2nd_GenieQ_FrontEnd) |
 | 🛠️ Backend  | [2nd_GenieQ_BackEnd](https://github.com/ChunJae-Full-Stack-FinalProject/2nd_GenieQ_BackEnd) |
+
+
+## 🧭 화면 플로우 차트
+
+서비스의 전체 사용자 흐름을 보여주는 플로우 차트입니다.
+
+<img src="./images/플로우 차트.png" alt="화면 플로우 차트" width="100%" />
+
+
+## 🗂 ERD 설계도
+
+GenieQ 서비스의 데이터베이스 구조를 시각적으로 표현한 ERD입니다.
+
+<img src="./images/erd.png" alt="ERD 설계도" width="100%" />
 
