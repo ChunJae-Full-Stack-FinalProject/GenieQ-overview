@@ -17,7 +17,7 @@
       <a href="https://github.com/hoonee-math">
         <img src="https://github.com/hoonee-math.png" width="100px;" alt="hoonee-math" style="border-radius:50%; border: 2px solid #00000033;"/>
         <br/>
-        <sub><b>최광훈</b><br/>팀장</sub>
+        <sub><b>최광훈</b><b/>팀장</sub>
       </a>
     </td>
     <td align="center">
