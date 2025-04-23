@@ -6,7 +6,7 @@
 </p>
 
 <p>
-  👉 <a href="http://43.202.6.90/team/genius/kwanghoon">소개 페이지 바로가기</a></br>
+  👉 <a href="http://43.202.6.90/team/genius">소개 페이지 바로가기</a></br>
   🌐 <a href="http://43.202.6.90">GenieQ 배포 웹사이트 바로가기</a>
 </p>
 
